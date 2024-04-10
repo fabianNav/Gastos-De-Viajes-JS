@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Viajes</title>
+</head>
+
+<body>
+  <header>
+    <section>
+      <h1>Presupuesto De Viajes</h1>
+    </section>
+  </header>
+  <main>
+    <section>
+      <form id="vacacionCalc">
+        <input type="text" name="destino" id="destino" placeholder="Destino" required>
+        <input type="number" name="presupuesto" id="presupuesto" placeholder="presupuesto" required>
+        <input type="number" name="alojamiento" id="alojamiento" placeholder="alojamiento" required>
+        <input type="number" name="transporte" id="transporte" placeholder="Transporte" required>
+        <input type="number" name="comida" id="comida" placeholder="Comida" required>
+        <input type="submit" value="Calcular">
+      </form>
+    </section>
+    <section>
+      <article class="iconos">
+        <h5><i class="fa-solid fa-plane"></i></h5>
+        <h5><i class="fa-solid fa-wallet"></i></h5>
+        <h5><i class="fa-solid fa-money-bill"></i></h5>
+      </article>
+    </section>
+    <section class="data">
+      <div id="resultado" class="resultado"></div>
+    </section>
+  </main>
+  <footer>
+
+  </footer>
+  <script type="module" src="/main.js"></script>
+  <script src="https://kit.fontawesome.com/5095e6fda6.js" crossorigin="anonymous"></script>
+</body>
+
+</html>
