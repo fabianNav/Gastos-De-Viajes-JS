@@ -13,28 +13,46 @@
       <h1>Presupuesto De Viajes</h1>
     </section>
   </header>
+  
   <main>
-    <section>
+    <section class="inputGrupo">
       <form id="vacacionCalc">
-        <input type="text" name="destino" id="destino" placeholder="Destino" required>
-        <input type="number" name="presupuesto" id="presupuesto" placeholder="presupuesto" required>
-        <input type="number" name="alojamiento" id="alojamiento" placeholder="alojamiento" required>
-        <input type="number" name="transporte" id="transporte" placeholder="Transporte" required>
-        <input type="number" name="comida" id="comida" placeholder="Comida" required>
+        <label>Destino:
+          <input type="text" name="destino" id="destino" required></label>
+        <label> Presupuesto:
+          <input type="number" name="presupuesto" id="presupuesto" min="0" required>
+        </label>
+        <label> Alojamiento:
+          <input type="number" name="alojamiento" id="alojamiento" min="0" required>
+        </label>
+        <label> Transporte:
+          <input type="number" name="transporte" id="transporte" min="0" required>
+        </label>
+        <label> Comida:
+          <input type="number" name="comida" id="comida" min="0" required>
+        </label>
         <input type="submit" value="Calcular">
       </form>
     </section>
-    <section>
+    <section class="containerResultado">
       <article class="total">
-          <section id="resultado" class="resultado container">
+        <section id="resultado" class="resultado container">
 
-          </section>
+        </section>
       </article>
     </section>
 
   </main>
   <footer>
-
+    <section>
+      <article>
+        <a id="github" href="https://github.com/fabianNav"><i class="fa-brands fa-github"></i></a>
+        <a id="linkedin" href="https://www.linkedin.com/in/luis-fabian-navarro-a9a42a217/"><i
+            class="fa-brands fa-linkedin-in"></i></a>
+        <a id="whatsapp" href="https://wa.link/4vfimv"><i class="fa-brands fa-whatsapp"></i></a>
+        <a id="mail" href="mailto:time50851@gmail.com"><i class="fa-solid fa-at"></i></a>
+      </article>
+    </section>
   </footer>
   <script type="module" src="/main.js"></script>
   <script src="https://kit.fontawesome.com/5095e6fda6.js" crossorigin="anonymous"></script>
