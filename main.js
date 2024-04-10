@@ -9,22 +9,62 @@ function calcExpens(e) {
   e.preventDefault();
 
   //? Destino
-  let destiny = document.getElementById('destino').value; 
-  console.log(destiny);
+  let destiny = document.getElementById('destino').value;
+  //console.log(destiny);
 
   //? Presupuesto
   let budget = document.getElementById('presupuesto').value;
-  console.log(budget);
+  //console.log(budget);
 
   //? Alojamiento
   let acomodation = document.getElementById('alojamiento').value;
-  console.log(acomodation);
+  //console.log(acomodation);
 
   //? Transporte
   let transport = document.getElementById('transporte').value;
-  console.log(transport);
+  //console.log(transport);
 
   //? Comida
   let food = document.getElementById('comida').value;
-  console.log(food);
+  //console.log(food);
+
+  //? Gastos
+  let expenses = parseInt(acomodation) + parseInt(transport) + parseInt(food);
+
+  //? Balance
+  let balance = budget - expenses;
+  //console.log(budget, balance);
+
+  //? Si no se pasan esos parametros entonces el programa no va a reconocer que son ni de donde son.
+  UI(destiny, budget, balance);
+}
+
+//TODO Inserta resultados en el DOM
+function UI(destiny, budget, balance) {
+  let result = document.getElementById('resultado');
+  result.innerHTML =
+    `
+    <section class="iconos">
+      <div class="vuelo">
+        <h5><i class="fa-solid fa-plane"></i></h5>
+        <h4>${destiny}</h4>
+      </div>
+      <div class="disponible">
+        <h5><i class="fa-solid fa-wallet"></i></h5>
+        <h4>${budget}</h4>
+      </div>
+      <div class="restante">
+        <h5><i class="fa-solid fa-money-bill"></i></h5>
+        <h4>${balance}</h4>
+      </div>
+      
+    </section>
+  `
+
+  reset();
+}
+
+//TODO resetea el form
+const reset = () => {
+  vacationCalc.reset();
 }
