@@ -47,7 +47,7 @@ function UI(destiny, budget, balance) {
     <section class="iconos">
       <div class="vuelo">
         <h5><i class="fa-solid fa-plane"></i></h5>
-        <h4>${destiny}</h4>
+        <h4>${destiny.toUpperCase()}</h4>
       </div>
       <div class="disponible">
         <h5><i class="fa-solid fa-wallet"></i></h5>

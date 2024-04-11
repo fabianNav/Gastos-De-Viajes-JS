@@ -142,12 +142,17 @@ main {
     margin-top: 10px;
     background-color: var(--input);
     color: var(--textInput);
-    
+}
+
+#destino {
+    text-transform: uppercase;
 }
 
 .containerResultado {
     margin-left: 100px;
 }
+
+/* TODO RESULTADO */
 
 .iconos {
     display: flex;
